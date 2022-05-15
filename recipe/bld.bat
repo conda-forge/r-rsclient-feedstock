@@ -1,2 +1,5 @@
+set LIBRARY_LIB=%LIBRARY_LIB:\=/%
+set LIBRARY_INC=%LIBRARY_INC:\=/%
+
 "%R%" CMD INSTALL --build . %R_ARGS%
 IF %ERRORLEVEL% NEQ 0 exit /B 1
