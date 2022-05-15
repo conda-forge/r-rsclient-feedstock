@@ -1,0 +1,20 @@
+From d95cfcaee5ae204e91b97fd19f043ea2186683dc Mon Sep 17 00:00:00 2001
+From: Daniel Bast <2790401+dbast@users.noreply.github.com>
+Date: Sun, 15 May 2022 17:41:19 +0200
+Subject: [PATCH] fix
+
+---
+ src/Makevars.win | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/src/Makevars.win b/src/Makevars.win
+index c70ef64..b1bd076 100644
+--- a/src/Makevars.win
++++ b/src/Makevars.win
+@@ -1 +1,2 @@
+-PKG_LIBS = -lssl -lcrypto -lws2_32 -lgdi32 -lcrypt32 -lz
++PKG_CPPFLAGS=-I$(LIBRARY_INC)
++PKG_LIBS=-L$(LIBRARY_LIB) -lssl -lcrypto -lws2_32 -lgdi32 -lcrypt32 -lz
+-- 
+2.35.0
+

@@ -11,6 +11,8 @@ source:
     - {{ cran_mirror }}/src/contrib/RSclient_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RSclient/RSclient_{{ version }}.tar.gz
   sha256: c50e8e774e5286172b28f452123df9675693dd7fe73c88aca9b10cea87f1c247
+  patches:
+    - win.patch
 
 build:
   merge_build_host: true  # [win]
