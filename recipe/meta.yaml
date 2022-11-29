@@ -1,4 +1,4 @@
-{% set version = '0.7-3' %}
+{% set version = "0.7-9" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RSclient_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RSclient/RSclient_{{ version }}.tar.gz
-  sha256: d04c50b027b4c2a0ab3ed8c47ae54e3d8014afe0cc8f309ede31d9c8aae1ab1e
+  sha256: 1bc6cfbd0776348c93d7619fc32d9e0668dfd5edf0a6cfaa0cc2f527bebbb713
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -49,7 +49,7 @@ about:
   summary: Client for Rserve, allowing to connect to Rserve instances and issue commands.
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
     - LICENSE
 
 extra:
