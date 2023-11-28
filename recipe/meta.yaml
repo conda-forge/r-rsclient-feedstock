@@ -1,4 +1,4 @@
-{% set version = '0.7-3' %}
+{% set version = "0.7-10" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RSclient_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RSclient/RSclient_{{ version }}.tar.gz
-  sha256: d04c50b027b4c2a0ab3ed8c47ae54e3d8014afe0cc8f309ede31d9c8aae1ab1e
+  sha256: a5c3e0fa3c6e12bc9917d203b44d013637a7d62c1d44c034af301b9f54bbd5e8
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
