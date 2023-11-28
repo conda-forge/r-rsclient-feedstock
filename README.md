@@ -7,20 +7,28 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rsclient-feed
 About r-rsclient
 ----------------
 
-Home: http://www.rforge.net/RSclient/
+Home: https://www.rforge.net/RSclient/
 
 Package license: GPL-2.0-only
 
 Summary: Client for Rserve, allowing to connect to Rserve instances and issue commands.
+
+Development: https://github.com/s-u/RSclient
+
+Documentation: https://www.rforge.net/RSclient/docs/index.html
 
 About r-rsclient
 ----------------
 
-Home: http://www.rforge.net/RSclient/
+Home: https://www.rforge.net/RSclient/
 
 Package license: GPL-2.0-only
 
 Summary: Client for Rserve, allowing to connect to Rserve instances and issue commands.
+
+Development: https://github.com/s-u/RSclient
+
+Documentation: https://www.rforge.net/RSclient/docs/index.html
 
 Current build status
 ====================
