@@ -34,6 +34,7 @@ requirements:
   host:
     - r-base
     - openssl
+    - zlib                       # [win]
   run:
     - r-base
 
