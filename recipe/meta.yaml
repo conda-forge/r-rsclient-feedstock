@@ -12,7 +12,7 @@ source:
   sha256: a5c3e0fa3c6e12bc9917d203b44d013637a7d62c1d44c034af301b9f54bbd5e8
 
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -34,6 +34,7 @@ requirements:
   host:
     - r-base
     - openssl
+    - zlib                       # [win]
   run:
     - r-base
 
