@@ -1,4 +1,4 @@
-{% set version = '0.7-10' %}
+{% set version = "0.7-11" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RSclient_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RSclient/RSclient_{{ version }}.tar.gz
-  sha256: a5c3e0fa3c6e12bc9917d203b44d013637a7d62c1d44c034af301b9f54bbd5e8
+  sha256: f9431e433e564820162cb8aef78306c6284db2ddc30ddbe91cb2dccb1a685c97
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
